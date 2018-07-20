@@ -1,2 +1,0 @@
-# Wonsz
-Apka treningowa
