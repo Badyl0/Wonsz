@@ -1,6 +1,10 @@
 plugins {
     id 'java'
+    id "groovy"
 }
+
+apply plugin: 'java'
+apply plugin: 'groovy'
 
 group 'GIdWonsz'
 version '1.0-SNAPSHOT'
