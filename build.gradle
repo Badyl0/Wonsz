@@ -8,35 +8,34 @@ buildscript {
     }
 }
 
-buildscript {
-    repositories {
-        maven {
-            url 'http://dl.bintray.com/cjstehno/public'
-        }
-    }
-    dependencies {
-        classpath 'gradle-templates:gradle-templates:1.4.1'
-    }
-}
+//buildscript {
+//    repositories {
+//        maven {
+//            url 'http://dl.bintray.com/cjstehno/public'
+//        }
+//    }
+//    dependencies {
+//        classpath 'gradle-templates:gradle-templates:1.4.1'
+//    }
+//}
 
 plugins {
     id 'java'
-    id "groovy"
+//    id "groovy"
     id "war"
 }
 
 apply plugin: 'java'
 apply plugin: "java-library"
-apply plugin: 'groovy'
+//apply plugin: 'groovy'
 apply plugin: 'com.bmuschko.tomcat'
 apply plugin: 'war'
-apply plugin:'templates'
+//apply plugin:'templates'
 
 group 'GIdWonsz'
 version '1.0-SNAPSHOT'
 
 sourceCompatibility = 1.8
-targetCompatibility = 1.8
 
 repositories {
     mavenCentral()
@@ -60,3 +59,4 @@ tomcat {
 
 tomcatRun.contextPath = '/'
 tomcatRunWar.contextPath = '/'
+

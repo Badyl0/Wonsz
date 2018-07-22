@@ -7,7 +7,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet(name = "HelloWebApp", urlPatterns = {"hello"}, loadOnStartup = 1)
+//@WebServlet(name = "HelloWebApp", urlPatterns = {"hello"}, loadOnStartup = 1)
 public class HelloWebApp extends HttpServlet {
     @java.lang.Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp)
