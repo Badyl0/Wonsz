@@ -5,13 +5,13 @@
 
 <web-app>
    <servlet>
-      <servlet-name>hello</servlet-name>
-      <servlet-class>HelloWebApp.HelloWebApp</servlet-class>
-   </servlet>
+   <servlet-name>hello</servlet-name>
+   <servlet-class>HelloWebApp.HelloWebApp</servlet-class>
+</servlet>
 
    <servlet-mapping>
       <servlet-name>hello</servlet-name>
-      <url-pattern>/test</url-pattern>
+      <url-pattern>/hello</url-pattern>
    </servlet-mapping>
 
    <!-- General description of your web application -->
