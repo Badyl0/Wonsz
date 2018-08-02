@@ -8,21 +8,22 @@ buildscript {
     }
 }
 
-//buildscript {
-//    repositories {
-//        maven {
-//            url 'http://dl.bintray.com/cjstehno/public'
-//        }
-//    }
-//    dependencies {
-//        classpath 'gradle-templates:gradle-templates:1.4.1'
-//    }
-//}
+buildscript {
+    repositories {
+        maven {
+            url 'http://dl.bintray.com/cjstehno/public'
+        }
+    }
+    dependencies {
+        classpath 'gradle-templates:gradle-templates:1.4.1'
+    }
+}
 
 plugins {
     id 'java'
 //    id "groovy"
     id "war"
+    id 'org.jetbrains.kotlin.jvm' version '1.2.60'
 }
 
 apply plugin: 'java'
@@ -30,7 +31,7 @@ apply plugin: "java-library"
 //apply plugin: 'groovy'
 apply plugin: 'com.bmuschko.tomcat'
 apply plugin: 'war'
-//apply plugin:'templates'
+apply plugin:'templates'
 
 group 'GIdWonsz'
 version '1.0-SNAPSHOT'
@@ -50,6 +51,8 @@ dependencies {
     tomcat "org.apache.tomcat.embed:tomcat-embed-core:${tomcatVersion}",
             "org.apache.tomcat.embed:tomcat-embed-logging-juli:9.0.0.M6",
             "org.apache.tomcat.embed:tomcat-embed-jasper:${tomcatVersion}"
+
+    compile "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
 }
 
 tomcat {
@@ -59,4 +62,15 @@ tomcat {
 
 tomcatRun.contextPath = '/'
 tomcatRunWar.contextPath = '/'
+
+compileKotlin {
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+}
+compileTestKotlin {
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+}
 

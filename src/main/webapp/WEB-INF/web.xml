@@ -4,15 +4,6 @@
     <!--"http://java.sun.com/dtd/web-app_2_3.dtd">-->
 
 <web-app>
-   <servlet>
-   <servlet-name>hello</servlet-name>
-   <servlet-class>HelloWebApp.HelloWebApp</servlet-class>
-</servlet>
-
-   <servlet-mapping>
-      <servlet-name>hello</servlet-name>
-      <url-pattern>/hello</url-pattern>
-   </servlet-mapping>
 
    <!-- General description of your web application -->
    <display-name>Wonsz - Webapp</display-name>
