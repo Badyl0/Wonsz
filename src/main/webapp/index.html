@@ -2,15 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>HelloWebApp</title>
+    <title>Wonsz</title>
 </head>
-<body>
-<p>Say <a href="hello">Hello</a></p>
-
-<form method="post" action="hello">
-    <h2>Name:</h2>
-    <input type="text" id="say-hello-text-input", name="name" />
-    <input type="submit" id="say-hello-button" value="Say Hello" />
-</form>
+<script type="text/javascript" src="kotlin.js"></script>
+<script type="text/javascript" src="View.js"></script>
+<body onload="View.initCanvas()">
+<p>Canvas</p>
+    <canvas id="mainCanvas" width="500" height="500"></canvas>
+<p></p>
+<button onclick="View.setBackground()">Click</button>
 </body>
 </html>

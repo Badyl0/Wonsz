@@ -2,6 +2,12 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
+      <module name="GIdWonsz-View_main" target="1.8" />
+      <module name="GIdWonsz-View_test" target="1.8" />
+      <module name="kotlin_main" target="1.8" />
+      <module name="kotlin_test" target="1.8" />
+      <module name="View_main" target="1.8" />
+      <module name="View_test" target="1.8" />
       <module name="Wonsz_main" target="1.8" />
       <module name="Wonsz_test" target="1.8" />
     </bytecodeTargetLevel>
